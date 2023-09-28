@@ -1,0 +1,132 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
+
+body {
+  font-family: 'Roboto', system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  background-color: rgb(18, 21, 24);
+}
+
+footer{
+  height: 10px;
+  width: 100%;
+  bottom: 0;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+footer img{
+  margin-left: 10px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  
+  *{
+    margin: 0;
+    padding: 0;
+  }
+
+  body{
+    font-family: 'Roboto', system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+  }
+
+  .container-nav{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1em;
+    background-color: rgb(255, 255, 255);
+  }
+
+  #desplegable{
+    cursor: pointer;
+    margin-left: -1em;
+    transition: transform .5s ease-in-out;
+  }
+
+  #desplegable:hover{
+    transform: rotate(180deg);
+  }
+
+  .container-nav img{
+    height: 30px;
+    width: 30px;
+  }
+
+  .content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 1em;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content img{
+    margin: 1em;
+    width: 90%;
+    height: auto;
+  }
+
+  .menu .menu-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    background-color: rgb(42, 42, 42);
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    max-height: 0px;
+    overflow: hidden;
+    font-size: 30px;
+}
+
+#cerrar{
+  margin-bottom: 40px;
+}
+
+  .menu-content a{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+
+  footer{
+    margin-top: 20px;
+    background-color: rgb(1, 38, 71);
+    height: fit-content;
+    display: flex;
+    padding: 0.3em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    position: fixed;
+    bottom: 0;
+  }
+  
+  footer img{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+  }   
+}
+
